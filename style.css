@@ -6,6 +6,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    transition: .4s ease-in-out;
+}
 
 body{
     display: flex;
@@ -19,9 +22,11 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 50%;
+    height: 55%;
     background-color: #fff;
     width: 40%;
+    box-shadow: .1px .1px 2px .2px #0000003f;
+    border-radius: 20px;
 }
 p{
     font-family: 'Montserrat', sans-serif;
@@ -46,7 +51,9 @@ h1{
     margin-left: 2em;
     width: 50%;
 }
-img{
+.img-container> img{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
    width: 100%;
    height: 100%;
 }
@@ -58,11 +65,12 @@ img{
 }
 section{
     background-color: #fff;
-    height: 100%
+    height: 100%;
+    border-radius: 20px;
 }
 
 .p-baixo{
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     font-size: 17px;
     line-height: 1.5em;
 }
@@ -71,6 +79,7 @@ section{
     display: flex;
     align-items: center;
     gap: 2em;
+    margin-bottom: 1.5em;
 }
 
 div > p{
@@ -79,7 +88,59 @@ div > p{
 
 .p-destaque{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Fraunces', serif;
     color:   hsl(158, 36%, 37%);
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    height: 12%;
+    color: #fff;
+    background-color:  hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    border: none;
+    border-radius: .5em;
+    transition: .3s ease-in-out;
+}
+
+button > img{
+    border-radius: none;
+    width: 10%;
+    height: 60%;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color:  hsl(158, 33%, 43%);
+}
+
+@media screen  and (max-width:1624px){
+    main{
+        width: 45%;
+    }
+    h1{
+        font-size: 2.2em;
+        margin-bottom: .8em;
+    }
+    .p-baixo, .p-top{
+        font-size: .9em;
+    }
+}
+@media screen  and (max-width:1368px){
+    main{
+        flex-direction: column;
+        width: 40%;
+    }
+    h1{
+        font-size: 2.2em;
+        margin-bottom: .8em;
+    }
+    .p-baixo, .p-top{
+        font-size: .9em;
+    }
 }
