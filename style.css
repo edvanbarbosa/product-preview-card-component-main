@@ -22,7 +22,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 55%;
+    height: 65%;
     background-color: #fff;
     width: 40%;
     box-shadow: .1px .1px 2px .2px #0000003f;
@@ -51,7 +51,7 @@ h1{
     margin-left: 2em;
     width: 50%;
 }
-.img-container> img{
+picture> img{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
    width: 100%;
@@ -109,6 +109,8 @@ button{
     transition: .3s ease-in-out;
 }
 
+
+
 button > img{
     border-radius: none;
     width: 10%;
@@ -133,8 +135,14 @@ button:hover{
 }
 @media screen  and (max-width:1368px){
     main{
+        
         flex-direction: column;
         width: 40%;
+        height: 95%;
+    }
+    section{
+        height: 50%;
+        width: 100%;
     }
     h1{
         font-size: 2.2em;
@@ -142,5 +150,25 @@ button:hover{
     }
     .p-baixo, .p-top{
         font-size: .9em;
+    }
+
+    picture > img{
+        height: 100%;
+    }
+    picture{
+        width: 100%;
+        height: 100%;
+    }
+    .img-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        height: 40%;
+    }
+    .text-container{
+        margin-top: 0em;
+        background-color: transparent;
+        width: 100%;
     }
 }
