@@ -181,7 +181,33 @@ button:hover{
 @media  screen and (max-width:993px) {
     main{
          width: 43%;
+         height: 100%;
      }
+     .p-baixo, .p-top{
+        font-size: .8em;
+        margin: 0;
+    }
+    h1{
+        font-size: 1.8em;
+        margin: 0;
+    }
+    .p-destaque{
+        font-size: 1.8em;
+        margin-top: 0;
+    }
+    button{
+        margin-top: 0;
+        margin-bottom: 1.2em;
+        height: 18%;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8em;
+        margin-top: -2em;
+    }
+     
 }
 @media  screen and (max-width:925px) {
     main{
@@ -191,7 +217,9 @@ button:hover{
 @media  screen and (max-width:850px) {
     main{
          width: 78%;
+         height: 70%;
      }
+     
 }
 
 @keyframes init {
